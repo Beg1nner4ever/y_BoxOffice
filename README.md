@@ -1,116 +1,102 @@
-# 🎬 y_BoxOffice: Prédiction de Revenus Cinématographiques
 
-![Banner](https://via.placeholder.com/1200x300/4a5568/ffffff?text=y_BoxOffice+%7C+Pr%C3%A9diction+de+Revenus+Cin%C3%A9matographiques)
+<div align="center">
 
-## 📊 Vue d'ensemble du projet
+# 🎬 y_BoxOffice 🎥
 
-> *"Prédire le succès, c'est commencer à le créer."*
+_Prédiction des Revenus au Box-Office avec Machine Learning_
 
-Ce projet utilise l'apprentissage automatique pour prédire les revenus au box-office des films en analysant divers facteurs qui influencent le succès commercial d'un film, des genres et dates de sortie aux sociétés de production et au contenu.
 
----
+[![ML](https://img.shields.io/badge/ML-Regression-blue.svg)](https://github.com/Beg1nner4ever/y_BoxOffice) [![Status](https://img.shields.io/badge/Status-En%20d%C3%A9veloppement-green.svg)](https://github.com/Beg1nner4ever/y_BoxOffice) [![School](https://img.shields.io/badge/%C3%89cole-Albert%20Data-purple.svg)](https://github.com/Beg1nner4ever/y_BoxOffice)
 
-## 💡 Motivation
+</div>
 
-L'industrie cinématographique investit des milliards dans la production et le marketing, rendant la prédiction précise des revenus cruciale pour les studios et les investisseurs. Ce modèle aide à comprendre ce qui détermine la performance au box-office et fournit un outil pour estimer les résultats financiers des sorties à venir.
+----------
 
----
+## 📊 Projet en bref
 
-## 🗃️ Données
+> _"Les données prédisent, l'argent suit."_
 
-Notre ensemble de données contient des informations sur plus de 13 000 films, notamment:
+Un modèle ML qui analyse les facteurs de succès commercial des films - du genre aux acteurs et au timing de sortie.
 
-| Type de données | Description |
-|----------------|-------------|
-| 📋 Métadonnées | Titre, durée, date de sortie |
-| 🎭 Genres | Classifications par genre |
-| 🏢 Production | Sociétés de production |
-| 📝 Contenu | Descriptions/synopsis des films |
-| ⭐ Évaluations | Notes des utilisateurs et métriques de popularité |
+----------
 
----
+## 🔮 Pourquoi?
 
-## 🔬 Méthodologie
+Le cinéma = business de milliards d'euros. Studios et investisseurs ont besoin de prédictions fiables avant de risquer leur argent sur des blockbusters potentiels. Notre modèle offre cette visibilité.
+
+----------
+
+## 🗃️ Données Analysées
+
+```yaml
+films: 13,000+
+caractéristiques:
+  - métadonnées: [titre, durée, date_sortie]
+  - contenu: [genre, synopsis, popularité]
+  - business: [studios, revenus]
+  - audience: [votes, évaluations]
+
+```
+
+----------
+
+## ⚡ Notre approche
 
 ```mermaid
 graph LR
-    A[Données Brutes] --> B[Nettoyage]
-    B --> C[Ingénierie des Caractéristiques]
-    C --> D[Entraînement du Modèle]
+    A[Films Bruts] --> B[Nettoyage]
+    B --> C[Features++]
+    C --> D[Training]
     D --> E[Évaluation]
-    E --> F[Sélection du Modèle]
-    F --> G[Prédiction des Revenus]
+    E --> F[Sélection]
+    F --> G[💰 Prédiction]
     
-    style A fill:#d0e0ff,stroke:#333
-    style G fill:#c0ffc0,stroke:#333
+    style A fill:#FF5252,stroke:#333
+    style B fill:#FF7752,stroke:#333
+    style C fill:#FFBD52,stroke:#333
+    style D fill:#FFE552,stroke:#333
+    style E fill:#D6FF52,stroke:#333
+    style F fill:#52FF8C,stroke:#333
+    style G fill:#52F0FF,stroke:#333
+
 ```
 
-1. **🧹 Nettoyage des données**: Suppression des anomalies, des films expérimentaux et des entrées avec des valeurs irréalistes
-2. **🔍 Analyse exploratoire**: Analyse de la distribution des revenus et des corrélations clés
-3. **⚙️ Ingénierie des caractéristiques**: Extraction de caractéristiques temporelles, d'indicateurs de genre et d'insights textuels
-4. **🤖 Développement du modèle**: Implémentation de plusieurs algorithmes ML et comparaison des performances
-5. **📏 Évaluation**: Évaluation de la précision prédictive à l'aide de métriques pertinentes pour l'industrie
+1.  **🧹 Nettoyer** - Fini les données farfelues et films expérimentaux de 10 jours
+2.  **🔧 Extraire** - Features temporelles, textuelles et commerciales
+3.  **🧠 Entraîner** - Multiple modèles ML en compétition
+4.  **📊 Évaluer** - Trouver le champion des prédictions
 
----
+----------
 
-## 🌟 Caractéristiques clés
-
-| Catégorie | Caractéristiques |
-|-----------|-----------------|
-| ⏱️ **Temporelles** | Mois, année et saison de sortie |
-| 📋 **Contenu** | Classifications par genre, durée |
-| 🏢 **Production** | Implication du studio, indicateur de grand studio |
-| 📝 **Texte** | Caractéristiques NLP extraites des descriptions |
-| 👥 **Popularité** | Nombre de votes, métriques de réception du public |
-
----
-
-## 🧠 Modèles
-
-Nous comparons plusieurs algorithmes:
-
-> 🌲 **Random Forest Regression**  
-> 📈 **Gradient Boosting Machines**  
-> 📊 **Régression linéaire** (référence)
-
----
-
-## 💎 Insights
-
-Notre analyse a révélé:
-
-- Les sorties estivales et pendant les vacances performent généralement mieux
-- L'Aventure et la Science-Fiction sont les genres les plus lucratifs
-- Les films populaires (nombre élevé de votes) sont fortement corrélés aux revenus
-- La qualité des évaluations du public montre une corrélation minimale avec le succès financier
-- Le soutien d'un grand studio impacte significativement les revenus
-
----
-
-## ⚙️ Installation et utilisation
+## 🚀 Comment l'utiliser
 
 ```bash
-# Cloner le dépôt
-git clone https://github.com/votrenomdutilisateur/y_BoxOffice.git
+# On clone
+git clone https://github.com/yourusername/y_BoxOffice.git
 
-# Installer les dépendances
+# On installe
 pip install -r requirements.txt
 
-# Exécuter les notebooks
+# On analyse 
 jupyter notebook
+
 ```
 
----
+----------
 
-## 📋 Prérequis
+## 📦 Tech stack
 
-- Python 3.8+
-- pandas, numpy, scikit-learn
-- matplotlib, seaborn
-- NLTK ou spaCy (pour les fonctionnalités NLP)
+```
+python 3.8+
+pandas | sklearn | matplotlib 
+numpy | seaborn | nltk/spacy
 
----
+```
 
 <div align="center">
-<p><i>Projet développé dans le cadre du programme Albert Global Data School 2024-2025</i></p>
+
+----------
+
+_Projet Albert Global Data School 2024-2025_
+
 </div>
