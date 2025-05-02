@@ -6,3 +6,5 @@ seaborn>=0.12.0
 nltk>=3.8.1
 spacy>=3.7.0
 jupyter>=1.0.0
+ipykernel>=6.0.0
+ipywidgets>=8.0.0
