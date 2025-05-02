@@ -26,7 +26,7 @@ L'industrie cinématographique est un jeu à enjeux élevés. Les studios et les
 
 ## 💾 Données & Source
 
-*   **Source :** Les données proviennent de l'API [TMDB (The Movie Database)](https://www.themoviedb.org/), plus précisément du fichier `TMDB_movie_dataset_v11.csv`.
+*   **Source :** Les données proviennent de kaggle dataset [Full TMDB Movies Dataset 2024 ( 1M Movies)](https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies) plus précisément du fichier `TMDB_movie_dataset_v11.csv`.
 *   **Contenu :** Il s'agit principalement de métadonnées de films, incluant :
     *   **Identifiants :** Titre, date de sortie.
     *   **Quantitatif :** `runtime` (durée), `vote_average` (note moyenne), `vote_count` (nombre de votes), `revenue` (revenus), `budget`.
