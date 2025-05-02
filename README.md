@@ -92,7 +92,7 @@ Nous avons commencé avec deux modèles de régression courants :
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/yourusername/y_BoxOffice.git
+git clone https://github.com/Beg1nner4ever/y_BoxOffice.git
 cd y_BoxOffice
 
 # Installer les dépendances
