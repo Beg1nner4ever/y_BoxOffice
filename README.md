@@ -58,13 +58,13 @@ graph LR
         D; E; F; G;
     end
 
-    style A fill:#D3D3D3,stroke:#000
-    style B fill:#ADD8E6,stroke:#000
-    style C fill:#ADD8E6,stroke:#000
-    style D fill:#FFFFE0,stroke:#000
-    style E fill:#FFE4B5,stroke:#000
-    style F fill:#90EE90,stroke:#000
-    style G fill:#90EE90,stroke:#000
+    style A fill:#D3D3D3,stroke:#000,color:#000
+    style B fill:#ADD8E6,stroke:#000,color:#000
+    style C fill:#ADD8E6,stroke:#000,color:#000
+    style D fill:#FFFFE0,stroke:#000,color:#000
+    style E fill:#FFE4B5,stroke:#000,color:#000
+    style F fill:#90EE90,stroke:#000,color:#000
+    style G fill:#90EE90,stroke:#000,color:#000
 
 ```
 
