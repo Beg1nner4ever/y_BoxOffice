@@ -136,6 +136,21 @@ Vous pouvez tester le modèle et prédire le box-office d'un film via une applic
 - Le modèle Random Forest donne généralement de meilleurs résultats
 - Il s'agit d'une preuve de concept : pour un usage commercial, il faudrait enrichir les features et affiner les modèles
 
+### ❓ Dépannage
+
+- **Streamlit n'est pas trouvé ?**
+  - Assurez-vous d'activer votre environnement virtuel avant de lancer l'application :
+    ```bash
+    source .venv/bin/activate
+    streamlit run app.py
+    ```
+  - Ou utilisez :
+    ```bash
+    python -m streamlit run app.py
+    ```
+- **Problème d'installation ?**
+  - Essayez d'utiliser [uv](https://github.com/astral-sh/uv) pour une gestion rapide et moderne des dépendances.
+
 ----------
 
 ## 📦 Stack Technique
@@ -144,7 +159,6 @@ Vous pouvez tester le modèle et prédire le box-office d'un film via une applic
 python >= 3.8
 pandas | sklearn | matplotlib
 numpy | seaborn | streamlit
-
 ```
 
 <div align="center">
