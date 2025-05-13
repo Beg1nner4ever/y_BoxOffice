@@ -1,3 +1,7 @@
 .mypy_cache
 *.csv
 .DS_Store
+TMDB_movie_dataset_v11.csv
+TMDB_cleaned_data.csv
+models/
+.venv/

@@ -88,21 +88,53 @@ Nous avons commencé avec deux modèles de régression courants :
 
 ----------
 
-## 🚀 Comment Utiliser
+## 🖥️ Application : Prédiction Interactive avec Streamlit
 
-```bash
-# Cloner le dépôt
-git clone https://github.com/Beg1nner4ever/y_BoxOffice.git
-cd y_BoxOffice
+Vous pouvez tester le modèle et prédire le box-office d'un film via une application web interactive !
 
-# Installer les dépendances
-pip install -r requirements.txt
+### Fonctionnalités principales
+- Interface utilisateur interactive (Streamlit)
+- Prédiction du revenu box-office à partir des caractéristiques du film
+- Visualisation de l'importance des variables
+- Comparaison entre plusieurs modèles (Random Forest, Régression Linéaire)
 
-# Lancer les notebooks (EDA d'abord, puis modélisation)
-jupyter notebook EDA_Films.ipynb
-jupyter notebook Modele_Prediction_Revenus.ipynb
+### Installation & Lancement
 
-```
+1. **Installer les dépendances**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Générer et sauvegarder les modèles** (à faire une seule fois, ou après mise à jour des données)
+   ```bash
+   python train_and_save_models.py
+   ```
+   Ce script :
+   - Charge les données nettoyées
+   - Entraîne les modèles (Régression Linéaire et Random Forest)
+   - Sauvegarde les modèles et l'importance des variables dans le dossier `models/`
+
+3. **Lancer l'application Streamlit**
+   ```bash
+   streamlit run app.py
+   ```
+   Puis ouvrir [http://localhost:8501](http://localhost:8501) dans votre navigateur.
+
+### Utilisation
+- Renseignez les caractéristiques du film dans la barre latérale (durée, note, votes, année/mois de sortie, etc.)
+- Cliquez sur "Predict Revenue" pour obtenir une estimation du box-office
+- Visualisez la comparaison entre modèles et l'importance des variables
+
+### Structure du projet
+- `app.py` : Application Streamlit principale
+- `train_and_save_models.py` : Script d'entraînement et sauvegarde des modèles
+- `models/` : Dossier contenant les modèles sauvegardés et l'importance des variables
+- `TMDB_cleaned_data.csv` : Jeu de données nettoyé utilisé pour l'entraînement
+
+### Notes
+- Les modèles sont entraînés sur des données historiques TMDB
+- Le modèle Random Forest donne généralement de meilleurs résultats
+- Il s'agit d'une preuve de concept : pour un usage commercial, il faudrait enrichir les features et affiner les modèles
 
 ----------
 
@@ -111,7 +143,7 @@ jupyter notebook Modele_Prediction_Revenus.ipynb
 ```
 python >= 3.8
 pandas | sklearn | matplotlib
-numpy | seaborn | jupyter
+numpy | seaborn | streamlit
 
 ```
 
